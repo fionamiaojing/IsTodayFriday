@@ -80,6 +80,10 @@
                                                 <rect key="frame" x="159" y="518" width="56" height="82"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scrollup" translatesAutoresizingMaskIntoConstraints="NO" id="gny-Qr-iIc">
+                                                <rect key="frame" x="127" y="790" width="120" height="73"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -123,5 +127,6 @@
     </scenes>
     <resources>
         <image name="scrolldown" width="173" height="195"/>
+        <image name="scrollup" width="485" height="486"/>
     </resources>
 </document>
