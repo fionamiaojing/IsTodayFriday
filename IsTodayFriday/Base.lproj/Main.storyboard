@@ -21,41 +21,96 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IsTodayFriday" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4Wz-sE-NYv">
-                                <rect key="frame" x="20" y="64" width="335" height="450"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Z1-b9-RjY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Today Friday?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW6-7L-NGb">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
-                                        <color key="textColor" red="0.17157428447109835" green="0.32811138034206688" blue="0.94258779287338257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ES-wf-odg">
-                                        <rect key="frame" x="0.0" y="54.333333333333329" width="335" height="35.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="31"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q9x-j6-O2e">
-                                        <rect key="frame" x="0.0" y="109.66666666666666" width="335" height="340.33333333333337"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYS-CV-kKB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rKd-zY-BQF">
+                                                <rect key="frame" x="10" y="60" width="355" height="348"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW6-7L-NGb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="57"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="50"/>
+                                                        <color key="textColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-9f-yJw">
+                                                        <rect key="frame" x="0.0" y="97" width="355" height="57"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="50"/>
+                                                        <color key="textColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRIDAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTP-lZ-Hdn">
+                                                        <rect key="frame" x="0.0" y="194" width="355" height="57"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="50"/>
+                                                        <color key="textColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46T-QY-ec4">
+                                                        <rect key="frame" x="0.0" y="291" width="355" height="57"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="50"/>
+                                                        <color key="textColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4Wz-sE-NYv">
+                                                <rect key="frame" x="20" y="1039.6666666666667" width="335" height="400.33333333333326"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ES-wf-odg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="35"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q9x-j6-O2e">
+                                                        <rect key="frame" x="0.0" y="60" width="335" height="340.33333333333331"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="q9x-j6-O2e" secondAttribute="height" multiplier="67:68" id="ZHb-Lj-vXv"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scrolldown" translatesAutoresizingMaskIntoConstraints="NO" id="KmP-sV-IqH">
+                                                <rect key="frame" x="58" y="518" width="259" height="170"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="q9x-j6-O2e" secondAttribute="height" multiplier="67:68" id="ZHb-Lj-vXv"/>
+                                            <constraint firstItem="rKd-zY-BQF" firstAttribute="leading" secondItem="cYS-CV-kKB" secondAttribute="leading" constant="10" id="31p-e8-QnO"/>
+                                            <constraint firstItem="rKd-zY-BQF" firstAttribute="top" secondItem="cYS-CV-kKB" secondAttribute="top" constant="60" id="7pZ-Y0-KgT"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Wz-sE-NYv" secondAttribute="bottom" constant="60" id="8CK-4w-kHe"/>
+                                            <constraint firstItem="4Wz-sE-NYv" firstAttribute="leading" secondItem="cYS-CV-kKB" secondAttribute="leading" constant="20" id="BPB-Dm-BXs"/>
+                                            <constraint firstAttribute="height" constant="1500" id="JDx-3F-8Cx"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Wz-sE-NYv" secondAttribute="trailing" constant="20" id="nNb-m1-L3M"/>
+                                            <constraint firstAttribute="trailing" secondItem="rKd-zY-BQF" secondAttribute="trailing" constant="10" id="vpM-1C-cOZ"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cYS-CV-kKB" secondAttribute="bottom" id="B7T-gQ-Dbk"/>
+                                    <constraint firstAttribute="trailing" secondItem="cYS-CV-kKB" secondAttribute="trailing" id="JTf-1r-FrR"/>
+                                    <constraint firstItem="cYS-CV-kKB" firstAttribute="leading" secondItem="9Z1-b9-RjY" secondAttribute="leading" id="Z9K-VS-4Hf"/>
+                                    <constraint firstItem="cYS-CV-kKB" firstAttribute="top" secondItem="9Z1-b9-RjY" secondAttribute="top" id="fo5-o1-UhK"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4Wz-sE-NYv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4SR-Vh-5Ry"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Wz-sE-NYv" secondAttribute="trailing" constant="20" id="JpB-5N-HxQ"/>
-                            <constraint firstItem="4Wz-sE-NYv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fj0-pN-SJk"/>
+                            <constraint firstAttribute="bottom" secondItem="9Z1-b9-RjY" secondAttribute="bottom" id="3Ti-mE-JSx"/>
+                            <constraint firstItem="9Z1-b9-RjY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N9u-hb-n72"/>
+                            <constraint firstItem="9Z1-b9-RjY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TeM-Dd-KyY"/>
+                            <constraint firstItem="9Z1-b9-RjY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vp7-pj-zXu"/>
+                            <constraint firstItem="cYS-CV-kKB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="cfY-6e-JVv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1500"/>
                     <connections>
                         <outlet property="OutputImage" destination="q9x-j6-O2e" id="q6n-qn-srN"/>
                         <outlet property="OutputLabel" destination="5ES-wf-odg" id="WsN-uG-fKD"/>
@@ -63,7 +118,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scrolldown" width="173" height="195"/>
+    </resources>
 </document>

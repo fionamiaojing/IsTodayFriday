@@ -19,14 +19,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         if testTodayisFriday() {
-            OutputLabel.text = "YES !!!!!"
+            OutputLabel.text = "YEEEEEEEES!!!"
             OutputLabel.textColor = UIColor .red
             OutputImage.image = UIImage(named: "YesImage")
         }
         else {
-            OutputLabel.text = "Nooooooooooope"
+            OutputLabel.text = "Nooooooooope"
             OutputLabel.textColor = UIColor .orange
             OutputImage.image = UIImage(named: "NoImage")
+
         }
     }
 
